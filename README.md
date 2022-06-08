@@ -1,4 +1,3 @@
 # DataStructure-Algorithm
 
-## Leetcode Study Plan
-https://leetcode.com/study-plan/
+## Leetcode Study Plan :book :link:[link]([https:](https://leetcode.com/study-plan/)
