@@ -3,11 +3,11 @@
 // # The final sorted array should not be returned by the function, but instead be stored inside the array nums1. 
 // # To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
 
-nums1 = [1,2,3,0,0,0]
-m = 3
+int[] nums1 = new int[] {1,2,3,0,0,0};
+int m = 3;
 
-nums2 = [2,5,6]
-n = 3
+int[] nums2 = new int[] {2,5,6};
+int n = 3;
 
 public class Solution {
         public void Merge(int[] nums1, int m, int[] nums2, int n) {
