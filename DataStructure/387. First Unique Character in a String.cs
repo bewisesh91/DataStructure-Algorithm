@@ -1,3 +1,4 @@
+
 public class Solution {
     public int FirstUniqChar(string s) {
         Dictionary<char, int> temp = new Dictionary<char, int>();
