@@ -16,7 +16,6 @@ class Solution:
                 new_r, new_c = r + dir_r, c + dir_c
                 
                 if 0 <= new_r and new_r < len(image) and 0 <= new_c and new_c < len(image[0]):
-                    print(new_r, new_c)
                     if image[new_r][new_c] == target and visited[new_r][new_c] != 1:
                         temp.append([new_r, new_c])
                         image[new_r][new_c] = color
