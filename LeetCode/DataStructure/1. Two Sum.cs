@@ -21,21 +21,23 @@ public class Solution {
 
 public class Solution {
     public int[] TwoSum(int[] nums, int target) {
-        Dictionary<int, int> numsDict = new Dictionary<int, int>();
-        int[] result = new int[2];
-        for (int i = 0; i < nums.Length; i++)
+        var numsDict = new Dictionary<int, int>();
+        var result = new List<int>();
+        
+        for (var i = 0; i < nums.Length; i++)
         {
             numsDict.Add(i, nums[i]);
         }
         
-        for (int i = 0; i < nums.Length; i++)
+        for (var i = 0; i < nums.Length; i++)
         {
             if (numsDict.ContainsValue(target - nums[i]) && i != Array.IndexOf(nums, target - nums[i]))
             {
-                result[0] = i;
-                result[1] = Array.IndexOf(nums, target - nums[i]);         
+                result.Add(i);
+                result.Add(Array.IndexOf(nums, target - nums[i]));
+                break;
             }
         }
-       return result;
+        return result.ToArray();
     }
 }
